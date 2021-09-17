@@ -7,7 +7,7 @@ mail = array[0]
 password = array[1]
 
 
-def login(mail, password):
+def login():
     payload = {
         'email': mail,
         'password': password,
@@ -19,4 +19,4 @@ def login(mail, password):
     print(j['token'] if 'token' in j else 'No token found')
 
 
-login(mail, password)
+login()
